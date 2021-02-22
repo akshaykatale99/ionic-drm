@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-lt-drm" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>LtDrm</name>
+    <js-module name="LtDrm" src="www/LtDrm.js">
+        <clobbers target="cordova.plugins.LtDrm" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="LtDrm">
+                <param name="android-package" value="cordova.plugin.lt.drm.LtDrm" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/LtDrm.java" target-dir="src/cordova-plugin-lt-drm/LtDrm" />
+    </platform>
+</plugin>

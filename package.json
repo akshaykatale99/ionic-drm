@@ -1,0 +1,17 @@
+{
+  "name": "cordova-plugin-lt-drm",
+  "version": "0.0.1",
+  "description": "Prevents Screenshot and Screen Recordings",
+  "cordova": {
+    "id": "cordova-plugin-lt-drm",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "akshay katale",
+  "license": "ISC"
+}
